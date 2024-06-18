@@ -26,7 +26,7 @@ def start_game(self):
     self.main_room()
 def main_room(self):
     print("You need to choose your own path here! Please choose the best choices")
-    choice = input("where you want to go? (village/class/house/exit):").capitalize()
+    choice = input("where you want to go? (village/class/house/exit):").upper()
 
     if choice == "village":
         self.village_room()
