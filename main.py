@@ -1,11 +1,11 @@
 class game:
     def in_it(self):
         self.start_game()
-        self.intro()
+
 #---functions---
 
 # Welcome user and introduce the game
-    def intro(self): 
+    def intro(): 
         # ask name of user       
         name = input("What is your name?")
         #welcom user + intro
