@@ -1,11 +1,11 @@
 #---functions---
-class Game:
+class Game():
     def __init__(self):
         self.start_game()
 
 #---MAIN CODE---
 
-#welcom user + intro
+#welcome user + intro
     def start_game(self):
         name = input("What is your name?") 
         print("Welcome to the adventure game! This gonna be really funny,",name)
@@ -30,6 +30,8 @@ class Game:
         else:
             print("Great!")
             self.main_room()
+
+#---ROOM---
 #village
     def village_room(self):
         print("Welcome, you have entered the village")
@@ -58,5 +60,5 @@ class Game:
         elif player == "Is she died a long ago???":
             print("You are correct, you get 1 apple. She died a long time ago but she still does not believe that she has died. They ignore her because they can not she her. Her family regret that they treat her really bad when she still alive. That poor girl still not believe but because you are in her body and you solve it that girl can live in peace now. Thanks for you")
             self.main_room()
-#Main code
+#--RUN CODE--
 Game ()
