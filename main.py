@@ -7,12 +7,10 @@ class Game():
 
 #welcome user + intro
     def start_game(self):
-        name = input("What is your name?") 
-        print("Welcome to the adventure game! This gonna be really funny,",name)
-        print("Want to know what is your task that you need to solve on this game?. You JUST GET one question when you starting the game and of course you need to answer it! If you are incorrect, you can't escape and back to your world! Get correct answer and one apple to escape, but don't worry I will give you some story line that might be can help you to answer the question. We will you give some options to go, choose the best choices! Good luck, player.")
+        print("Hello! Welcome to the adventure game, dear player!")
+        print("Here is a bit explanation that I will give. In this game you just need to get 1 apple to win, how to get it? Choose your own path and answer the question correctly!")
 #introduction bg story game
-        print("This is what the games about, i will explain before you will need to start the real game!")
-        print("There is a girl who is hated with a lot of people with no reason, her family and her friends do not even talk with her. Whenever she goes to her family village their family is not even looking or talk with her. When she goes to the class to study their friends even does not talk with her and not looking at her like they can not see her. When she goes back to home her family do not even say hello to her and their face has no expression. Why their friends and family not talk with her even just say hello to her? Can you help to find the reason?")
+        print("There is a girl named Diana, she just turned 15 years old this month. She looks lonely because her friends and family suddenly ignore her and look like they hate her so much. She does not have any idea why they become cold towards her, unbelievable. When she goes to her class her friend just pass her without say anything, same with her family. She hates to be lonely.")
         print("Hope you can escape, even though a bit chance to win this game ^^")
         self.main_room()
     def main_room(self):
