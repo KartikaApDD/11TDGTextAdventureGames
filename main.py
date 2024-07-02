@@ -8,14 +8,19 @@ class Game():
 #welcome user + intro
     def start_game(self):
         print("Hello! Welcome to the adventure game, dear player!")
-        print("Here is a bit explanation that I will give. In this game you just need to get 1 apple to win, how to get it? Choose your own path and answer the question correctly!")
-#introduction bg story game
-        print("There is a girl named Diana, she just turned 15 years old this month. She looks lonely because her friends and family suddenly ignore her and look like they hate her so much. She does not have any idea why they become cold towards her, unbelievable. When she goes to her class her friend just pass her without say anything, same with her family. She hates to be lonely.")
-        print("Hope you can escape, even though a bit chance to win this game ^^")
-        self.main_room()
+        #story line
+        choice = input("Do you wish to read the story or just want skip it? I suggested to read the story for better experience!(skip/continue)):")
+        #choice for storyline
+        if choice == "skip":
+            self.start_game()
+        elif choice == "continue":
+            self.main_room()
+
+#story line, starting game
     def main_room(self):
+        print("Here is the story: There is a girl named Diana, she just turned 15 years old this month. She looks lonely because her friends and family suddenly ignore her and look like they hate her so much. She does not have any idea why they become cold towards her, unbelievable. When she goes to her class her friend just pass her without say anything, same with her family. She hates to be lonely.")
         print("You need to choose your own path here! Please choose the best choices")
-        choice = input("where you want to go? (village/class/house/exit):").upper()
+        choice = input("where you want to go? (village/class/house/exit):")
 
         if choice == "village":
             self.village_room()
